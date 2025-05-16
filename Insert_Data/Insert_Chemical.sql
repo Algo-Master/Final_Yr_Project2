@@ -1,0 +1,177 @@
+-- Insert into Departments
+INSERT INTO Departments (DepartmentName) VALUES 
+('Chemical Engineering');
+
+-- Insert into Students
+INSERT INTO Students (Name, RegistrationNo, EnrollmentNo, DepartmentID, CurrentSemester, Email, Address) VALUES 
+('Aasif Miah', '2113466', '21UCH005', 1, 8, 'aasif@example.com', 'Agartala, Tripura');
+
+-- Insert into Courses
+INSERT INTO Courses (CourseCode, CourseName, Credits, DepartmentID) VALUES 
+('UPH11807', 'ENGINEERING PHYSICS-I', 3, 1),
+('UCS11808', 'INTRODUCTION TO PROGRAMMING', 3, 1),
+('UCY11809', 'ENGINEERING CHEMISTRY-I', 3, 1),
+('UCE11811', 'DISASTER MANAGEMENT', 2, 1),
+('UEC11812', 'BASIC ELECTRONICS', 3, 1),
+('UMA1181C', 'ENGINEERING MATHEMATICS-I', 3, 1),
+('UPH12906', 'ENGINEERING PHYSICS LABORATORY', 1, 1),
+('UCS12908', 'COMPUTER PROGRAMMING LABORATORY', 1, 1),
+('UEC12907', 'BASIC ELECTRONICS LABORATORY', 1, 1),
+('UNE12903', 'ENGINEERING GRAPHICS', 2, 1),
+('UAD12905', 'NSS/NCC', 0, 1),
+('UPH12809', 'ENGINEERING PHYSICS-II', 3, 1),
+('UCY12808', 'ENGINEERING CHEMISTRY-II', 2, 1),
+('UHU12807', 'LANGUAGE (PROFESSIONAL COMMUNICATION IN ENGLISH)', 3, 1),
+('UNE12811', 'ENGINEERING MECHANICS', 4, 1),
+('UEE12812', 'BASIC ELECTRICAL ENGINEERING', 3, 1),
+('UMA12B1C', 'ENGINEERING MATHEMATICS-II', 3, 1),
+('UNE22P08', 'WORKSHOP PRACTICE', 1, 1),
+('UCY22P06', 'ENGINEERING CHEMISTRY LABORATORY', 1, 1),
+('UEE22P07', 'BASIC ELECTRICAL ENGINEERING LABORATORY', 1, 1),
+('UCH03C18', 'ENGINEERING MATHEMATICS-III', 3, 1),
+('UCH03C19', 'ENGINEERING ECONOMICS & ACCOUNTANCY', 3, 1),
+('UCH03B11', 'CHEMICAL PROCESS CALCULATION', 3, 1),
+('UCH03B13', 'MACHINE DESIGN', 3, 1),
+('UCH03B10', 'FLUID MECHANICS', 3, 1),
+('UCH03B12', 'CHEMICAL ENGINEERING THERMODYNAMICS-I', 3, 1),
+('UCH03P13', 'MACHINE DRAWING', 2, 1),
+('UCH03S01', 'EXTRA ACADEMIC ACTIVITIES', 0, 1),
+('UCH04C20', 'PRINCIPLES OF MANAGEMENT', 3, 1),
+('UCH04E03', 'DEPARTMENTAL ELECTIVE I (MATERIAL SCIENCE AND ENGINEERING)', 3, 1),
+('UCH04B15', 'NUMERICAL METHODS FOR CHEMICAL ENGINEERING', 3, 1),
+('UCH04812', 'PROCESS HEAT TRANSFER', 4, 1),
+('UCH04813', 'CHEMICAL ENGINEERING THERMODYNAMICS II', 3, 1),
+('UCH04814', 'MECHANICAL OPERATION', 3, 1),
+('UCH04915', 'FLUID MECHANICS LABORATORY', 2, 1),
+('UCH04916', 'NUMERICAL METHODS LABORATORY', 2, 1),
+('UCH04501', 'EXTRA ACADEMIC ACTIVITIES', 0, 1),
+('UCH05E03', 'DEPARTMENTAL ELECTIVE II (COMPUTATIONAL FLUID DYNAMICS)', 3, 1),
+('UCH05818', 'PROCESS DYNAMICS & INSTRUMENTATION', 3, 1),
+('UCH05817', 'CHEMICAL REACTION ENGINEERING I', 3, 1),
+('UCH05819', 'ENERGY SOURCES AND UTILIZATION', 3, 1),
+('UCH05816', 'MASS TRANSFER - I', 3, 1),
+('UCH05P19', 'MECHANICAL OPERATIONS LABORATORY', 2, 1),
+('UCH05P21', 'ENERGY SOURCES AND UTILIZATION LABORATORY', 2, 1),
+('UCH05P20', 'HEAT TRANSFER LABORATORY', 2, 1),
+('UCH05S01', 'EXTRA ACADEMIC ACTIVITY', 0, 1),
+('UCH06824', 'Process Control', 3, 1),
+('UCH06E03', 'Departmental Elective - III (ENVIRONMENTAL ENGINEERING)', 3, 1),
+('UCH06B26', 'Project Engineering & Economics', 4, 1),
+('UCH06B25', 'Chemical Process Technology', 4, 1),
+('UCH06B22', 'Mass Transfer II', 3, 1),
+('UCH06B23', 'Chemical Reaction Engineering II', 3, 1),
+('UCH06P23', 'PROCESS EQUIPMENT DESIGN AND DRAWING I', 2, 1),
+('UCH06P22', 'CHEMICAL REACTION ENGINEERING LABORATORY', 2, 1),
+('UCH06P24', 'MASS TRANSFER LABORATORY', 2, 1),
+('UCH06S01', 'EXTRA ACADEMIC ACTIVITIES', 0, 1),
+('UCH07B75', 'Process Safety Engineering', 3, 1),
+('UCH07E14', 'DEPARTMENTAL ELECTIVE-IV (Petroleum and Petrochemical Engineering)', 3, 1),
+('UCH07E16', 'DEPARTMENTAL ELECTIVE-V (Biochemical and Bioprocess Engineering)', 3, 1),
+('UCH07B74', 'Transport Phenomena', 3, 1),
+('UCH07P10', 'PROCESS CONTROL & INSTRUMENTATION LABORATORY', 2, 1),
+('UCH07P11', 'PROJECT-1', 2, 1),
+('UCH07912', 'SUMMER TRAINING', 2, 1),
+('UCH07913', 'PROCESS EQUIPMENT DESIGN & DRAWING-II', 2, 1);
+
+-- Insert into Semesters
+INSERT INTO Semesters (SemesterName, AcademicYear) VALUES 
+('Semester I', '2021-22'),
+('Semester II', '2021-22'),
+('Semester III', '2022-23'),
+('Semester IV', '2022-23'),
+('Semester V', '2023-24'),
+('Semester VI', '2023-24'),
+('Semester VII', '2024-25');
+
+-- Insert into Marks (All semesters with assigned marks based on grades)
+INSERT INTO Marks (StudentID, CourseID, SemesterID, MarksObtained, Grade, DateOfExamination, DateOfResultPublication) VALUES
+
+-- Semester I (ODD 2021-22)
+(1, 1, 1, 92, 'A', '2022-03-01', '2022-04-05'),
+(1, 2, 1, 88, 'A', '2022-03-01', '2022-04-05'),
+(1, 3, 1, 90, 'A', '2022-03-01', '2022-04-05'),
+(1, 4, 1, 75, 'B', '2022-03-01', '2022-04-05'),
+(1, 5, 1, 78, 'B', '2022-03-01', '2022-04-05'),
+(1, 6, 1, 65, 'C', '2022-03-01', '2022-04-05'),
+(1, 7, 1, 95, 'A', '2022-03-01', '2022-04-05'),
+(1, 8, 1, 93, 'A', '2022-03-01', '2022-04-05'),
+(1, 9, 1, 62, 'C', '2022-03-01', '2022-04-05'),
+(1, 10, 1, 64, 'C', '2022-03-01', '2022-04-05'),
+(1, 11, 1, 72, 'B', '2022-03-01', '2022-04-05'),
+
+-- Semester II (EVEN 2021-22)
+(1, 12, 2, 45, 'P', '2022-07-01', '2022-07-26'),
+(1, 13, 2, 76, 'B', '2022-07-01', '2022-07-26'),
+(1, 14, 2, 89, 'A', '2022-07-01', '2022-07-26'),
+(1, 15, 2, 63, 'C', '2022-07-01', '2022-07-26'),
+(1, 16, 2, 67, 'C', '2022-07-01', '2022-07-26'),
+(1, 17, 2, 55, 'D', '2022-07-01', '2022-07-26'),
+(1, 18, 2, 91, 'A', '2022-07-01', '2022-07-26'),
+(1, 19, 2, 74, 'B', '2022-07-01', '2022-07-26'),
+(1, 20, 2, 61, 'C', '2022-07-01', '2022-07-26'),
+
+-- Semester III (ODD 2022-23)
+(1, 21, 3, 66, 'C', '2022-11-01', '2022-12-20'),
+(1, 22, 3, 77, 'B', '2022-11-01', '2022-12-20'),
+(1, 23, 3, 48, 'P', '2022-11-01', '2022-12-20'),
+(1, 24, 3, 47, 'P', '2022-11-01', '2022-12-20'),
+(1, 25, 3, 73, 'B', '2022-11-01', '2022-12-20'),
+(1, 26, 3, 90, 'A', '2022-11-01', '2022-12-20'),
+
+-- Supplementary Semester III (2023)
+(1, 27, 3, 79, 'B', '2023-06-01', '2023-07-01'),
+(1, 28, 3, 49, 'P', '2023-06-01', '2023-07-01'),
+
+-- Semester IV (EVEN 2022-23)
+(1, 29, 4, 87, 'A', '2023-04-01', '2023-05-18'),
+(1, 30, 4, 64, 'C', '2023-04-01', '2023-05-18'),
+(1, 31, 4, 76, 'B', '2023-04-01', '2023-05-18'),
+(1, 32, 4, 58, 'D', '2023-04-01', '2023-05-18'),
+(1, 33, 4, 56, 'D', '2023-04-01', '2023-05-18'),
+(1, 34, 4, 92, 'A', '2023-04-01', '2023-05-18'),
+(1, 35, 4, 94, 'A', '2023-04-01', '2023-05-18'),
+(1, 36, 4, 93, 'A', '2023-04-01', '2023-05-18'),
+(1, 37, 4, 89, 'A', '2023-04-01', '2023-05-18'),
+
+-- Semester V (ODD 2023-24)
+(1, 38, 5, 91, 'A', '2023-11-01', '2023-12-08'),
+(1, 39, 5, 65, 'C', '2023-11-01', '2023-12-08'),
+(1, 40, 5, 67, 'C', '2023-11-01', '2023-12-08'),
+(1, 41, 5, 78, 'B', '2023-11-01', '2023-12-08'),
+(1, 42, 5, 75, 'B', '2023-11-01', '2023-12-08'),
+(1, 43, 5, 95, 'EX', '2023-11-01', '2023-12-08'),
+(1, 44, 5, 92, 'A', '2023-11-01', '2023-12-08'),
+(1, 45, 5, 93, 'A', '2023-11-01', '2023-12-08'),
+(1, 46, 5, 90, 'A', '2023-11-01', '2023-12-08'),
+
+-- Semester VI (EVEN 2023-24)
+(1, 47, 6, 45, 'P', '2024-04-01', '2024-05-22'),
+(1, 48, 6, 63, 'C', '2024-04-01', '2024-05-22'),
+(1, 49, 6, 88, 'A', '2024-04-01', '2024-05-22'),
+(1, 50, 6, 47, 'P', '2024-04-01', '2024-05-22'),
+(1, 51, 6, 74, 'B', '2024-04-01', '2024-05-22'),
+(1, 52, 6, 66, 'C', '2024-04-01', '2024-05-22'),
+(1, 53, 6, 62, 'C', '2024-04-01', '2024-05-22'),
+(1, 54, 6, 91, 'A', '2024-04-01', '2024-05-22'),
+(1, 55, 6, 93, 'A', '2024-04-01', '2024-05-22'),
+(1, 56, 6, 89, 'A', '2024-04-01', '2024-05-22'),
+
+-- Semester VII (ODD 2024-25)
+(1, 57, 7, 65, 'C', '2024-11-01', '2024-12-18'),
+(1, 58, 7, 57, 'D', '2024-11-01', '2024-12-18'),
+(1, 59, 7, 55, 'D', '2024-11-01', '2024-12-18'),
+(1, 60, 7, 76, 'B', '2024-11-01', '2024-12-18'),
+(1, 61, 7, 92, 'A', '2024-11-01', '2024-12-18'),
+(1, 62, 7, 73, 'B', '2024-11-01', '2024-12-18'),
+(1, 63, 7, 72, 'B', '2024-11-01', '2024-12-18'),
+(1, 64, 7, 74, 'B', '2024-11-01', '2024-12-18');
+
+-- Insert into SemesterResults (All semesters)
+INSERT INTO SemesterResults (StudentID, SemesterID, SGPA, CGPA) VALUES
+(1, 1, 8.23, 8.23),
+(1, 2, 7.10, 7.68),
+(1, 3, 4.46, 7.30),
+(1, 4, 7.64, 7.39),
+(1, 5, 8.15, 7.53),
+(1, 6, 7.12, 7.45),
+(1, 7, 7.27, 7.43);
